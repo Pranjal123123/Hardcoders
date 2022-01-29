@@ -32,16 +32,3 @@ Github repository containing the submission for Cuvette Codoctober Hackathon 202
 #### Get `/forum/view/:id` Route to view a particular discussion thread
 #### Post `/forum/answer/:id` Route to answer a particular question
 
-
-
-**Installation**
-
-
-
-### Our Contributors
-
-
-
-
-
-#### 
