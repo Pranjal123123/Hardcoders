@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discussion Forum</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/forumStyle.css">
@@ -20,37 +20,9 @@
 <body>
 
     <!--Navbar code copy paste-->
-    <nav style="z-index: 1;">
-        <div class="icon">
-            <b>Study<br> Corner</b>
-            <!-- 
-                <form action="/user/public-profile" method="GET" class="form-inline search_box"></form>
-                <input type="text" name="search" placeholder="Search for users" class="form-control"style="    padding: 0;
-                padding-left: 45px;
-                margin-top: 2px;">
-                <span class="fa fa-search"></span>
-            </form>
-            </div> -->
-            <form action="/user/public-profile" method="GET" class="form-inline search_box" style="margin-left:30px; ">
-                <div class="form-group" style="margin-top:-2vh;">
-                    <input type="text" name="search" placeholder="user search..." class="form-control" style="border:2px solid lightgray;width: 16vw;">
-                </div>
-            </form>
-            
-        </div>
-        
-        <ol class="abc_new" style="    margin: -17px 0px;
-        display: flex;
-        list-style: none;
-        align-items: center;
-        justify-content: flex-end;">
-            <li><a href="/">Home</a></li>
-            <li><a href="/resource">Resource</a></li>
-            <li><a href="/forum">Discussion</a></li>
-            <li><a href="/user/signup">Sign Up</a></li>
-            <img class="img"src="/img/images.jpg">
-        </ol>
-    </nav>
+    <div class="pos" style="z-index: 4;">
+        <%- include('partials/header') %>
+    </div>
 
     <div class="abc_new1" style="
     margin-top: 150px;
@@ -111,7 +83,7 @@
     <!--Search and Icon container-->
     <form class="forum-search" style="width: 400px;" action="/forum" method="GET">
 
-        <div class="search-div" style="margin-top: 10px;">
+        <div class="search-div" >
             <input type="text" name="search" id="search-query" placeholder="Search by query-tags">
             <i class="fas fa-search" id="search-icon"></i>
         </div>

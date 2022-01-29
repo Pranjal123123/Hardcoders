@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins',sans-serif;
-}
+} 
 nav{
     display: flex;
     width: 100%;
@@ -23,16 +23,16 @@ nav .icon{
     color: rgb(60, 76, 219);
     line-height: 1;
 }
-nav ol{
+#navstl ol{
     display: flex;
     list-style: none;
     margin: auto 0;
 }
-nav ol li{
+#navstl ol li{
     margin: 10px 6px;
     justify-content: center;
 }
-nav ol li a{
+#navstl ol li a{
     color: #636363;
     font-size: 16px;
     text-decoration: none;
@@ -40,12 +40,12 @@ nav ol li a{
     letter-spacing: 1px;
     padding: 5px 10px;
 }
-nav ol li:hover a{
+#navstl ol li:hover a{
     background-color: rgba(109, 123, 250, 0.904);
     font-size: 22px;
     text-decoration: none;
 }
-nav .search_box{
+.icon .search_box{
     display: flex;
     margin: auto 0;
     height: 35px;
@@ -53,7 +53,7 @@ nav .search_box{
     line-height: 35px;
 }
 
-nav .search_box input{
+.icon .search_box input{
     border: 1px solid rgb(39, 51, 155);
     border-radius: 3px;
     margin-left: 50px;
@@ -65,7 +65,7 @@ nav .search_box input{
 
 }
 
-nav .search_box span{
+.icon .search_box span{
     color: rgb(60, 76, 219);
     font-size: 18px;
     height: 100%;

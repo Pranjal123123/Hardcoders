@@ -15,7 +15,7 @@
     <title>resources</title>
   </head>
   <body> 
-    <div class="pos">
+    <div class="pos" style="z-index: 4;">
       <%- include('partials/header') %>
     </div>
     <div class="widt">
@@ -30,23 +30,6 @@
   <a href="/resource/create" class="btn card-link" id="crt">Add Resource</a>
               
     <div class="row">
-        <!-- <% resources.forEach(function(resource){%>
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <img src="<%=resource.cover%>" alt="Image not available" class="card-img-top-">
-            <div class="card-body">
-              <h5 class="card-title"><%=resource.title%></h5>
-              <p class="card-text"><%=resource.body.substring(0, 20)%>...</p>
-              <div class="bottomButtons">
-                <a href="#" class="card-link vote"><i class="fas fa-thumbs-up"></i></a>
-                <a href="#" class="card-link vote"><i class="fas fa-thumbs-down"></i></a>
-                <a href="/resource/view/<%=resource._id%>" class="btn  card-link" id="continue">Continue</a>
-              </div>         
-              
-            </div>
-          </div>
-        </div>
-        <%})%> -->
         <% resources.forEach(function(resource){%>
           <div class="card" style="width: 18rem;">
               <img src="<%=resource.cover%>" alt="Image not available" class="card-img-top-">

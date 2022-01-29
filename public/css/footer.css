@@ -64,7 +64,7 @@ body {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-}
+} 
 
 /* contact symbol style with fa styling below */
 .footer-heading {
@@ -96,7 +96,7 @@ body {
   padding: 2vh 0 3vh 0;
 }
 
-.fa {
+.follow-us .fa {
   padding: 5px 7px;
   font-size: 26px;
   text-decoration: none;
@@ -106,17 +106,17 @@ body {
   margin-right: 2vw;
 }
 
-.fa:last-child {
+.follow-us .fa:last-child {
   margin-right: 0;
 }
 
-.fa-facebook {
+.follow-us .fa-facebook {
   padding: 5px 9px;
   font-size: 24px;
 }
 
-.contact-symbol,
-.fa-phone {
+.footer-contact-aa .contact-symbol,
+.footer-contact-aa .fa-phone {
   border: none;
   margin-right: 10px;
   color: #32fcf3;

@@ -17,7 +17,7 @@ body {
 
 /* Ask your button question */
 
-#ask-btn {
+.abc_new1 #ask-btn {
     padding: 0.8rem;
     margin-left: 7rem;
     text-align: center;
@@ -27,20 +27,20 @@ body {
     border-radius: 5px;
 }
 
-#ask-btn:hover {
+.abc_new1 #ask-btn:hover {
     padding: 0.6rem;
 }
 
 /* Query list container*/
 
-.query {
+.abc_new1 .query {
     position: relative;
     font-family: 'Nunito', sans-serif;
     width: 60vw;
 }
 
 /* List elements of the query container */
-.query{
+.abc_new1 .query{
     border-radius: 5px;
     width: 60vw;
     padding: 3rem;
@@ -55,31 +55,31 @@ body {
 .query:nth-of-type(1) {
     margin-top: 2rem;
 }
-a {
+.abc_new1 a {
     text-decoration: none;
 }
 
 /* Query top */
-.query-top {
+.abc_new1 .query-top {
     font-weight:700;
 }
-.query-top span:nth-of-type(1) {
+.abc_new1 .query-top span:nth-of-type(1) {
     margin-right: 5rem;
 } 
-.query-top span:nth-of-type(3) {
+.abc_new1 .query-top span:nth-of-type(3) {
     position: absolute;
     right: 7rem;
     top: 1.2rem;
 }
 /* Query vote buttons */
-.query-votes button {
+.abc_new1 .query-votes button {
     margin: 0.5rem;
     background-color: white;
     border: none;
 }
 
 /* Query tags */
-.query-tags {
+.abc_new1 .query-tags {
     font-weight: 700;
     word-spacing: 0.5rem;
     text-transform: uppercase;
@@ -89,12 +89,12 @@ a {
 }
 
 /* Query answer*/
-.query-ans {
+.abc_new1 .query-ans {
     position: absolute;
     bottom: 0rem;
     right: 2rem;
 }
-#answer-btn {
+.abc_new1 #answer-btn {
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     text-align: center;
     font-weight: 700;
@@ -106,18 +106,18 @@ a {
     right: 5rem;
     bottom: 2rem;
 }
-#answer-btn:hover {
+.abc_new1 #answer-btn:hover {
     padding: 0.6rem 1.6rem 0.6rem 1.6rem;
 }
 
 /* Search box */
 
-.search-div {
+.abc_new1 .search-div {
     position: relative;
     padding: 1rem;
 }
 
-#search-query {
+.abc_new1 #search-query {
     position: absolute;
     padding: 0.3rem;
     padding-left: 1rem;
@@ -127,12 +127,12 @@ a {
     border-radius: 5px;
     border: 1px solid grey;
 }
-#search-icon {
+.abc_new1 #search-icon {
     position: absolute;
     top: 28px;
     right: 11rem;
 }
-#search-img {
+.abc_new1 #search-img {
     width: 80%;
     height: auto;
     margin-left: 10rem;

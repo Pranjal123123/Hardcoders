@@ -80,7 +80,7 @@
 		<form action="/user/notes" method="POST">
 			<div class="row">
 			  <div class="col-25">
-				<label for="fname">Title</label>
+				<label for="fname">Title:</label>
 			  </div>
 			  <div class="col-75 as1">
 				<input type="text" id="new_id" name="title" placeholder="Title.." >
@@ -88,7 +88,7 @@
 			</div>
 			<div class="row">
 				<div class="col-25">
-				  <label for="fname">Description</label>
+				  <label for="fname">Descriiption :</label>
 				</div>
 				<div class="col-75">
 				  <input type="text" id="new_id" name="description" placeholder="Title.." >
@@ -96,7 +96,7 @@
 			  </div>
 			  <div class="row">
 				<div class="col-25">
-				  <label for="fname">URL link</label>
+				  <label for="fname">URL link:</label>
 				</div>
 				<div class="col-75 as2">
 				  <input type="text" id="new_id" name="url" placeholder="Enter URL of the current page" >
@@ -122,21 +122,12 @@
 		<h3>CATEGORY:</h3> <%= resource.category%>
 		<h3>TAGS:</h3> <%= resource.tags%>
 		<h3>AUTHOR:</h3> <%= resource.author.name%>
-		<h3>URL:</h3> <%= resource.url%>
+		<h3>URL:</h3><p style="height: auto; width:50vw;"> <%= resource.url%></p>
 		<h3>COMMENTS:</h3> 
 		<form class="commnts" action="/resource/comment/<%=resource._id%>" method="POST">
 			<textarea id="subject" name="body" placeholder="Write your comment.." style="height:210px;width: 700px;"></textarea>
-             <!-- <div class="submit"> -->
 				<button type="submit" class="btn btn-success">Add comment</button>
 		</form>
-		<!-- <div class="commnts">
-			
-			<textarea id="subject" name="subject" placeholder="Write something.." style="height:210px;width: 700px;"></textarea>
-             <div class="submit">
-			<input type="submit" placeholder="Add"  style="width: 8vw;height: 7vh;background-color:#3F5F8E; color: white;
-			font-weight: bold">
-		    </div>
-		</div> -->
 		<div class="commnts-show">
 			<br>
 			<% resource.comments.forEach(function(comment){%>
@@ -151,6 +142,7 @@
 </div>
 <br>
 </div>
+<%- include('partials/footer') %>
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
